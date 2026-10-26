@@ -1,0 +1,134 @@
+======================================================================
+UNIT TEST EXECUTION LOG (FROM PROJECT ROOT: py -m unittest -v Source_Code/test_harness.py)
+======================================================================
+test_blocklist_absent_ip (Source_Code.test_harness.TestCorrectedReference.test_blocklist_absent_ip) ... ok
+test_blocklist_empty (Source_Code.test_harness.TestCorrectedReference.test_blocklist_empty) ... ok
+test_blocklist_first_position (Source_Code.test_harness.TestCorrectedReference.test_blocklist_first_position) ... ok
+test_blocklist_later_position (Source_Code.test_harness.TestCorrectedReference.test_blocklist_later_position) ... ok
+test_blocklist_multiple_repeated_queries (Source_Code.test_harness.TestCorrectedReference.test_blocklist_multiple_repeated_queries) ... ok
+test_closest_pair_duplicate_coordinates (Source_Code.test_harness.TestCorrectedReference.test_closest_pair_duplicate_coordinates) ... ok
+test_closest_pair_empty_event_list (Source_Code.test_harness.TestCorrectedReference.test_closest_pair_empty_event_list) ... ok
+test_closest_pair_multiple_equally_close_pairs (Source_Code.test_harness.TestCorrectedReference.test_closest_pair_multiple_equally_close_pairs) ... ok
+test_closest_pair_one_event (Source_Code.test_harness.TestCorrectedReference.test_closest_pair_one_event) ... ok
+test_closest_pair_supplied_sample (Source_Code.test_harness.TestCorrectedReference.test_closest_pair_supplied_sample) ... ok
+test_closest_pair_two_events (Source_Code.test_harness.TestCorrectedReference.test_closest_pair_two_events) ... ok
+test_signature_at_beginning (Source_Code.test_harness.TestCorrectedReference.test_signature_at_beginning) ... ok
+test_signature_at_end (Source_Code.test_harness.TestCorrectedReference.test_signature_at_end) ... ok
+test_signature_empty_log (Source_Code.test_harness.TestCorrectedReference.test_signature_empty_log) ... ok
+test_signature_empty_pattern (Source_Code.test_harness.TestCorrectedReference.test_signature_empty_pattern) ... ok
+test_signature_multiple_occurrences (Source_Code.test_harness.TestCorrectedReference.test_signature_multiple_occurrences) ... ok
+test_signature_no_match (Source_Code.test_harness.TestCorrectedReference.test_signature_no_match) ... ok
+test_signature_overlapping_occurrences (Source_Code.test_harness.TestCorrectedReference.test_signature_overlapping_occurrences) ... ok
+test_signature_pattern_longer_than_log (Source_Code.test_harness.TestCorrectedReference.test_signature_pattern_longer_than_log) ... ok
+test_signature_supplied_sample (Source_Code.test_harness.TestCorrectedReference.test_signature_supplied_sample) ... ok
+test_sorting_already_sorted_data (Source_Code.test_harness.TestCorrectedReference.test_sorting_already_sorted_data) ... ok
+test_sorting_empty_list (Source_Code.test_harness.TestCorrectedReference.test_sorting_empty_list) ... ok
+test_sorting_equal_severities (Source_Code.test_harness.TestCorrectedReference.test_sorting_equal_severities) ... ok
+test_sorting_no_lost_or_duplicated_alerts (Source_Code.test_harness.TestCorrectedReference.test_sorting_no_lost_or_duplicated_alerts) ... ok
+test_sorting_reverse_ordered_data (Source_Code.test_harness.TestCorrectedReference.test_sorting_reverse_ordered_data) ... ok
+test_sorting_single_alert (Source_Code.test_harness.TestCorrectedReference.test_sorting_single_alert) ... ok
+test_sorting_stable_ordering (Source_Code.test_harness.TestCorrectedReference.test_sorting_stable_ordering) ... ok
+test_sorting_supplied_sample (Source_Code.test_harness.TestCorrectedReference.test_sorting_supplied_sample) ... ok
+test_opt_blocklist_absent_ip (Source_Code.test_harness.TestOptimizedModule.test_opt_blocklist_absent_ip) ... ok
+test_opt_blocklist_empty (Source_Code.test_harness.TestOptimizedModule.test_opt_blocklist_empty) ... ok
+test_opt_blocklist_first_position (Source_Code.test_harness.TestOptimizedModule.test_opt_blocklist_first_position) ... ok
+test_opt_blocklist_later_position (Source_Code.test_harness.TestOptimizedModule.test_opt_blocklist_later_position) ... ok
+test_opt_blocklist_multiple_repeated_queries (Source_Code.test_harness.TestOptimizedModule.test_opt_blocklist_multiple_repeated_queries) ... ok
+test_opt_closest_pair_duplicate_coordinates (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_duplicate_coordinates) ... ok
+test_opt_closest_pair_empty_event_list (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_empty_event_list) ... ok
+test_opt_closest_pair_multiple_equally_close_pairs (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_multiple_equally_close_pairs) ... ok
+test_opt_closest_pair_one_event (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_one_event) ... ok
+test_opt_closest_pair_random_datasets_cross_check (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_random_datasets_cross_check)
+Cross-checks divide-and-conquer against independent brute force across 40 random sets. ... ok
+test_opt_closest_pair_supplied_sample (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_supplied_sample) ... ok
+test_opt_closest_pair_two_events (Source_Code.test_harness.TestOptimizedModule.test_opt_closest_pair_two_events) ... ok
+test_opt_signature_at_beginning (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_at_beginning) ... ok
+test_opt_signature_at_end (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_at_end) ... ok
+test_opt_signature_empty_log (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_empty_log) ... ok
+test_opt_signature_empty_pattern (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_empty_pattern) ... ok
+test_opt_signature_multiple_occurrences (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_multiple_occurrences) ... ok
+test_opt_signature_no_match (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_no_match) ... ok
+test_opt_signature_overlapping_occurrences (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_overlapping_occurrences) ... ok
+test_opt_signature_pattern_longer_than_log (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_pattern_longer_than_log) ... ok
+test_opt_signature_supplied_sample (Source_Code.test_harness.TestOptimizedModule.test_opt_signature_supplied_sample) ... ok
+test_opt_sorting_already_sorted_data (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_already_sorted_data) ... ok
+test_opt_sorting_empty_list (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_empty_list) ... ok
+test_opt_sorting_equal_severities (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_equal_severities) ... ok
+test_opt_sorting_no_lost_or_duplicated_alerts (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_no_lost_or_duplicated_alerts) ... ok
+test_opt_sorting_reverse_ordered_data (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_reverse_ordered_data) ... ok
+test_opt_sorting_single_alert (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_single_alert) ... ok
+test_opt_sorting_stable_ordering (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_stable_ordering) ... ok
+test_opt_sorting_supplied_sample (Source_Code.test_harness.TestOptimizedModule.test_opt_sorting_supplied_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 0.033s
+
+OK
+
+
+======================================================================
+UNIT TEST EXECUTION LOG (FROM Source_Code DIRECTORY: py -m unittest -v test_harness.py)
+======================================================================
+test_blocklist_absent_ip (test_harness.TestCorrectedReference.test_blocklist_absent_ip) ... ok
+test_blocklist_empty (test_harness.TestCorrectedReference.test_blocklist_empty) ... ok
+test_blocklist_first_position (test_harness.TestCorrectedReference.test_blocklist_first_position) ... ok
+test_blocklist_later_position (test_harness.TestCorrectedReference.test_blocklist_later_position) ... ok
+test_blocklist_multiple_repeated_queries (test_harness.TestCorrectedReference.test_blocklist_multiple_repeated_queries) ... ok
+test_closest_pair_duplicate_coordinates (test_harness.TestCorrectedReference.test_closest_pair_duplicate_coordinates) ... ok
+test_closest_pair_empty_event_list (test_harness.TestCorrectedReference.test_closest_pair_empty_event_list) ... ok
+test_closest_pair_multiple_equally_close_pairs (test_harness.TestCorrectedReference.test_closest_pair_multiple_equally_close_pairs) ... ok
+test_closest_pair_one_event (test_harness.TestCorrectedReference.test_closest_pair_one_event) ... ok
+test_closest_pair_supplied_sample (test_harness.TestCorrectedReference.test_closest_pair_supplied_sample) ... ok
+test_closest_pair_two_events (test_harness.TestCorrectedReference.test_closest_pair_two_events) ... ok
+test_signature_at_beginning (test_harness.TestCorrectedReference.test_signature_at_beginning) ... ok
+test_signature_at_end (test_harness.TestCorrectedReference.test_signature_at_end) ... ok
+test_signature_empty_log (test_harness.TestCorrectedReference.test_signature_empty_log) ... ok
+test_signature_empty_pattern (test_harness.TestCorrectedReference.test_signature_empty_pattern) ... ok
+test_signature_multiple_occurrences (test_harness.TestCorrectedReference.test_signature_multiple_occurrences) ... ok
+test_signature_no_match (test_harness.TestCorrectedReference.test_signature_no_match) ... ok
+test_signature_overlapping_occurrences (test_harness.TestCorrectedReference.test_signature_overlapping_occurrences) ... ok
+test_signature_pattern_longer_than_log (test_harness.TestCorrectedReference.test_signature_pattern_longer_than_log) ... ok
+test_signature_supplied_sample (test_harness.TestCorrectedReference.test_signature_supplied_sample) ... ok
+test_sorting_already_sorted_data (test_harness.TestCorrectedReference.test_sorting_already_sorted_data) ... ok
+test_sorting_empty_list (test_harness.TestCorrectedReference.test_sorting_empty_list) ... ok
+test_sorting_equal_severities (test_harness.TestCorrectedReference.test_sorting_equal_severities) ... ok
+test_sorting_no_lost_or_duplicated_alerts (test_harness.TestCorrectedReference.test_sorting_no_lost_or_duplicated_alerts) ... ok
+test_sorting_reverse_ordered_data (test_harness.TestCorrectedReference.test_sorting_reverse_ordered_data) ... ok
+test_sorting_single_alert (test_harness.TestCorrectedReference.test_sorting_single_alert) ... ok
+test_sorting_stable_ordering (test_harness.TestCorrectedReference.test_sorting_stable_ordering) ... ok
+test_sorting_supplied_sample (test_harness.TestCorrectedReference.test_sorting_supplied_sample) ... ok
+test_opt_blocklist_absent_ip (test_harness.TestOptimizedModule.test_opt_blocklist_absent_ip) ... ok
+test_opt_blocklist_empty (test_harness.TestOptimizedModule.test_opt_blocklist_empty) ... ok
+test_opt_blocklist_first_position (test_harness.TestOptimizedModule.test_opt_blocklist_first_position) ... ok
+test_opt_blocklist_later_position (test_harness.TestOptimizedModule.test_opt_blocklist_later_position) ... ok
+test_opt_blocklist_multiple_repeated_queries (test_harness.TestOptimizedModule.test_opt_blocklist_multiple_repeated_queries) ... ok
+test_opt_closest_pair_duplicate_coordinates (test_harness.TestOptimizedModule.test_opt_closest_pair_duplicate_coordinates) ... ok
+test_opt_closest_pair_empty_event_list (test_harness.TestOptimizedModule.test_opt_closest_pair_empty_event_list) ... ok
+test_opt_closest_pair_multiple_equally_close_pairs (test_harness.TestOptimizedModule.test_opt_closest_pair_multiple_equally_close_pairs) ... ok
+test_opt_closest_pair_one_event (test_harness.TestOptimizedModule.test_opt_closest_pair_one_event) ... ok
+test_opt_closest_pair_random_datasets_cross_check (test_harness.TestOptimizedModule.test_opt_closest_pair_random_datasets_cross_check)
+Cross-checks divide-and-conquer against independent brute force across 40 random sets. ... ok
+test_opt_closest_pair_supplied_sample (test_harness.TestOptimizedModule.test_opt_closest_pair_supplied_sample) ... ok
+test_opt_closest_pair_two_events (test_harness.TestOptimizedModule.test_opt_closest_pair_two_events) ... ok
+test_opt_signature_at_beginning (test_harness.TestOptimizedModule.test_opt_signature_at_beginning) ... ok
+test_opt_signature_at_end (test_harness.TestOptimizedModule.test_opt_signature_at_end) ... ok
+test_opt_signature_empty_log (test_harness.TestOptimizedModule.test_opt_signature_empty_log) ... ok
+test_opt_signature_empty_pattern (test_harness.TestOptimizedModule.test_opt_signature_empty_pattern) ... ok
+test_opt_signature_multiple_occurrences (test_harness.TestOptimizedModule.test_opt_signature_multiple_occurrences) ... ok
+test_opt_signature_no_match (test_harness.TestOptimizedModule.test_opt_signature_no_match) ... ok
+test_opt_signature_overlapping_occurrences (test_harness.TestOptimizedModule.test_opt_signature_overlapping_occurrences) ... ok
+test_opt_signature_pattern_longer_than_log (test_harness.TestOptimizedModule.test_opt_signature_pattern_longer_than_log) ... ok
+test_opt_signature_supplied_sample (test_harness.TestOptimizedModule.test_opt_signature_supplied_sample) ... ok
+test_opt_sorting_already_sorted_data (test_harness.TestOptimizedModule.test_opt_sorting_already_sorted_data) ... ok
+test_opt_sorting_empty_list (test_harness.TestOptimizedModule.test_opt_sorting_empty_list) ... ok
+test_opt_sorting_equal_severities (test_harness.TestOptimizedModule.test_opt_sorting_equal_severities) ... ok
+test_opt_sorting_no_lost_or_duplicated_alerts (test_harness.TestOptimizedModule.test_opt_sorting_no_lost_or_duplicated_alerts) ... ok
+test_opt_sorting_reverse_ordered_data (test_harness.TestOptimizedModule.test_opt_sorting_reverse_ordered_data) ... ok
+test_opt_sorting_single_alert (test_harness.TestOptimizedModule.test_opt_sorting_single_alert) ... ok
+test_opt_sorting_stable_ordering (test_harness.TestOptimizedModule.test_opt_sorting_stable_ordering) ... ok
+test_opt_sorting_supplied_sample (test_harness.TestOptimizedModule.test_opt_sorting_supplied_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 0.026s
+
+OK

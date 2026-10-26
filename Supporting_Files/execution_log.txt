@@ -1,0 +1,125 @@
+======================================================================
+SENTINELOPS SOC ALERT-TRIAGE MODULE — EXECUTION & BENCHMARK LOG
+======================================================================
+Student Name        : R.VISSHAAL
+Registration Number : 192421025
+Course              : CSA06 — Design and Analysis of Algorithms
+Assessment          : CO2 — Debugging and Optimisation Task
+Environment         : Windows (Python 3.11.9)
+Date of Execution   : 26 October 2026
+
+----------------------------------------------------------------------
+1. ORIGINAL DEFECT REPRODUCTION (Source_Code/original_buggy.py)
+----------------------------------------------------------------------
+Input Alerts: [('A1', 3), ('A2', 9), ('A3', 5), ('A4', 9), ('A5', 1)]
+Buggy sort_alerts Output:
+  [('A4', 9), ('A3', 5), ('A3', 5), ('A5', 1), ('A5', 1)]
+  -> Defect 1 & 2: 'A1' and 'A2' lost, 'A3' and 'A5' duplicated!
+
+Input Blocklist: ['10.0.0.5', '10.0.0.9', '172.16.4.2']
+Buggy is_blocked Queries:
+  10.0.0.9 -> False (Defect 4: early loop exit on 1st element)
+  10.0.0.5 -> False (Defect 3: returns False on match!)
+  8.8.8.8  -> False (Defect 4: early loop exit)
+
+Input Log: 'FAILFAIXFAIL', Pattern: 'FAIL'
+Buggy find_signature Output:
+  [0, 4]
+  -> Defect 5 & 6: Missed end-index 8 due to range(n-m); falsely accepted 'FAIX' at index 4!
+
+Input Events: [(2, 3), (12, 30), (40, 50), (5, 1), (12, 10), (3, 4)]
+Buggy closest_logins Output:
+  Pair: (0, 2), Distance: 60.440052945046304 km
+  -> Defect 7, 8, 9: Found farthest pair instead of closest pair!
+
+----------------------------------------------------------------------
+2. CORRECTED BASELINE VERIFICATION (Source_Code/corrected_reference.py)
+----------------------------------------------------------------------
+Corrected sort_alerts:
+  [('A2', 9), ('A4', 9), ('A3', 5), ('A1', 3), ('A5', 1)] -> Matches expected!
+Corrected is_blocked:
+  10.0.0.9 -> True  [FOUND]
+  10.0.0.5 -> True  [FOUND]
+  8.8.8.8  -> False [ABSENT]
+Corrected find_signature:
+  [0, 8] -> Matches expected!
+Corrected closest_logins:
+  Pair: (0, 5), Distance: 1.4142135623730951 km (sqrt(2)) -> Matches expected!
+
+----------------------------------------------------------------------
+3. OPTIMISED PRODUCTION MODULE (Source_Code/optimized_module.py)
+----------------------------------------------------------------------
+Optimised sort_alerts (Stable Timsort):
+  [('A2', 9), ('A4', 9), ('A3', 5), ('A1', 3), ('A5', 1)] -> Matches expected!
+Optimised is_blocked (Set-based Hash Index):
+  10.0.0.9 -> True  [FOUND]
+  10.0.0.5 -> True  [FOUND]
+  8.8.8.8  -> False [ABSENT]
+Optimised find_signature (Early-termination Brute-Force):
+  [0, 8] -> Matches expected!
+Optimised closest_logins (Divide-and-Conquer O(p log p)):
+  Pair: (0, 5), Distance: 1.4142135623730951 km -> Matches expected!
+
+----------------------------------------------------------------------
+4. UNIT TEST SUITE EXECUTION SUMMARY
+----------------------------------------------------------------------
+Command: py -m unittest -v Source_Code/test_harness.py
+Ran 57 tests across TestCorrectedReference and TestOptimizedModule.
+Total Tests Run: 57
+Failures       : 0
+Errors         : 0
+Status         : OK (Execution time: 0.016s)
+
+----------------------------------------------------------------------
+5. CLOSEST-PAIR BENCHMARK MEASUREMENTS
+----------------------------------------------------------------------
+Batch 1000:
+  Brute-Force Comps  : 499,500
+  Optimised Comps    : 1,145
+  Brute-Force Time   : 0.1523s
+  Optimised Time     : 0.0089s
+  Distances Agree    : True
+
+Batch 2000:
+  Brute-Force Comps  : 1,999,000
+  Optimised Comps    : 2,316
+  Brute-Force Time   : 0.6024s
+  Optimised Time     : 0.0169s
+  Distances Agree    : True
+
+Batch 4000:
+  Brute-Force Comps  : 7,998,000
+  Optimised Comps    : 4,618
+  Brute-Force Time   : 2.4657s
+  Optimised Time     : 0.0357s
+  Distances Agree    : True
+
+Batch 8000:
+  Brute-Force Comps  : 31,996,000
+  Optimised Comps    : 9,344
+  Brute-Force Time   : 7.1572s
+  Optimised Time     : 0.0544s
+  Distances Agree    : True
+
+----------------------------------------------------------------------
+6. INSERTION SORT KEY COMPARISON BENCHMARKS
+----------------------------------------------------------------------
+Size 1000:
+  already_descending : 999 comparisons
+  nearly_descending  : 1,098 comparisons
+  random             : 250,789 comparisons
+Size 5000:
+  already_descending : 4,999 comparisons
+  nearly_descending  : 5,098 comparisons
+  random             : 6,289,295 comparisons
+Size 10000:
+  already_descending : 9,999 comparisons
+  nearly_descending  : 10,098 comparisons
+  random             : 25,017,572 comparisons
+
+Timsort Production Runtimes:
+  Size 1000  (random) : 0.000159s
+  Size 5000  (random) : 0.000763s
+  Size 10000 (random) : 0.001440s
+======================================================================
+END OF LOG

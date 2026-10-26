@@ -1,0 +1,16 @@
+ALGORITHM: DIVIDE-AND-CONQUER CLOSEST PAIR
+INPUT: points (x, y), with original input indices
+OUTPUT: original-index pair and Euclidean distance; (None, infinity) for fewer than 2 points
+1. Attach each point's original index and sort by (x, y, index).
+2. Recursively solve each half; for at most 3 points, check all unordered pairs.
+3. Keep the better squared distance from the two halves.
+4. Merge the halves in y-sorted order.
+5. Build a strip containing points whose squared horizontal distance from the split
+   line is less than the current best squared distance.
+6. In y-order, compare following strip points only while squared vertical separation
+   is less than the current best squared distance. Update the best pair if improved.
+7. Return the best pair and square root of the best squared distance.
+
+TIME: O(n log n) for the merge-based implementation under the closest-pair packing bound.
+SPACE: O(n) auxiliary storage across recursive levels/merges.
+Squared distances are used for comparisons; square root is taken once for final output.

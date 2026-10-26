@@ -1,0 +1,10 @@
+input_size,distribution,insertion_sort_key_comparisons
+1000,already_descending,999
+1000,nearly_descending,1098
+1000,random,250789
+5000,already_descending,4999
+5000,nearly_descending,5098
+5000,random,6289295
+10000,already_descending,9999
+10000,nearly_descending,10098
+10000,random,25017572

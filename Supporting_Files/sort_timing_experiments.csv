@@ -1,0 +1,10 @@
+input_size,distribution,timsort_seconds
+1000,already_descending,5.2e-05
+1000,nearly_descending,6.2e-05
+1000,random,0.000159
+5000,already_descending,0.000232
+5000,nearly_descending,0.000232
+5000,random,0.000763
+10000,already_descending,0.000537
+10000,nearly_descending,0.000431
+10000,random,0.00144

@@ -1,0 +1,24 @@
+{
+  "alerts": [
+    {
+      "id": "A1",
+      "severity": 3
+    },
+    {
+      "id": "A2",
+      "severity": 9
+    },
+    {
+      "id": "A3",
+      "severity": 5
+    },
+    {
+      "id": "A4",
+      "severity": 9
+    },
+    {
+      "id": "A5",
+      "severity": 1
+    }
+  ]
+}

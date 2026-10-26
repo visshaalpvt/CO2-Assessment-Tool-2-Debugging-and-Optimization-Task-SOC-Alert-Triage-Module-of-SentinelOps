@@ -1,0 +1,4 @@
+# Core algorithms and test suite use only the Python standard library.
+# Optional dependencies for benchmark plotting and PDF report generation:
+matplotlib>=3.7.0
+reportlab>=4.0.0

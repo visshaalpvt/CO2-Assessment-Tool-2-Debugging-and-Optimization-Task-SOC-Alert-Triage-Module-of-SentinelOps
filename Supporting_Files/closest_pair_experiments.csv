@@ -1,0 +1,5 @@
+batch_size,brute_force_distance_computations,optimized_distance_computations,brute_force_seconds,optimized_seconds,brute_force_distance,optimized_distance,distances_agree
+1000,499500,1145,0.152315,0.008868,497.792823,497.792823,True
+2000,1999000,2316,0.602371,0.016876,399.659643,399.659643,True
+4000,7998000,4618,2.465723,0.035678,204.632268,204.632268,True
+8000,31996000,9344,7.157182,0.054371,68.285575,68.285575,True

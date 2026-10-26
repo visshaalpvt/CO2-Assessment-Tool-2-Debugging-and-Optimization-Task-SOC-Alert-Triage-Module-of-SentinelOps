@@ -1,0 +1,18 @@
+ALGORITHM: STABLE DESCENDING ALERT SORT
+INPUT: sequence alerts; each item contains an alert identifier and severity
+OUTPUT: a new sequence ordered by severity descending, stable for equal severities
+
+1. Copy alerts into a result sequence.
+2. For each alert, use its severity as the sort key.
+3. Apply a stable sorting algorithm in descending order.
+4. Return the sorted sequence.
+
+Production implementation: Python's stable Timsort via sorted(..., reverse=True).
+Corrected baseline: insertion sort; move previous items only when their severity is
+strictly lower than the key's severity, then insert at j + 1.
+
+TIME: baseline O(n^2) worst case and O(n) best case; production sort O(n log n)
+worst case and adaptive O(n) on already ordered runs.
+SPACE: baseline O(n) because this implementation copies the input; production sorted()
+uses O(n) auxiliary storage.
+STABILITY: equal severities retain their arrival order.

@@ -1,0 +1,13 @@
+ALGORITHM: BRUTE-FORCE SIGNATURE MATCHING
+INPUT: log string of length n and pattern string of length m
+OUTPUT: all starting indices of exact matches, including overlaps
+1. If pattern is empty, return indices 0 through n (documented convention).
+2. For each starting index i from 0 through n-m inclusive:
+   a. Set j = 0.
+   b. While j < m and log[i+j] equals pattern[j], increment j.
+   c. If j equals m, append i to the result.
+3. Return the result.
+
+A mismatch stops comparisons for that alignment. The inclusive end bound checks the
+last valid starting position. Overlapping matches are retained.
+TIME: O((n-m+1)m) worst case; SPACE: O(k) for k matches, excluding output.

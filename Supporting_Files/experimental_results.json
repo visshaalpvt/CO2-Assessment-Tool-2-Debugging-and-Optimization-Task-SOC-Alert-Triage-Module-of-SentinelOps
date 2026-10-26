@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "student_name": "R.VISSHAAL",
+    "registration_number": "192421025",
+    "course": "CSA06 - Design and Analysis of Algorithms",
+    "task": "CO2 Debugging and Optimisation - SentinelOps SOC Alert-Triage",
+    "seed_closest_pair_base": 20261026,
+    "seed_sorting_base": 404
+  },
+  "closest_pair_benchmarks": [
+    {
+      "batch_size": 1000,
+      "brute_force_distance_computations": 499500,
+      "optimized_distance_computations": 1145,
+      "brute_force_seconds": 0.152315,
+      "optimized_seconds": 0.008868,
+      "brute_force_distance": 497.792823,
+      "optimized_distance": 497.792823,
+      "distances_agree": true
+    },
+    {
+      "batch_size": 2000,
+      "brute_force_distance_computations": 1999000,
+      "optimized_distance_computations": 2316,
+      "brute_force_seconds": 0.602371,
+      "optimized_seconds": 0.016876,
+      "brute_force_distance": 399.659643,
+      "optimized_distance": 399.659643,
+      "distances_agree": true
+    },
+    {
+      "batch_size": 4000,
+      "brute_force_distance_computations": 7998000,
+      "optimized_distance_computations": 4618,
+      "brute_force_seconds": 2.465723,
+      "optimized_seconds": 0.035678,
+      "brute_force_distance": 204.632268,
+      "optimized_distance": 204.632268,
+      "distances_agree": true
+    },
+    {
+      "batch_size": 8000,
+      "brute_force_distance_computations": 31996000,
+      "optimized_distance_computations": 9344,
+      "brute_force_seconds": 7.157182,
+      "optimized_seconds": 0.054371,
+      "brute_force_distance": 68.285575,
+      "optimized_distance": 68.285575,
+      "distances_agree": true
+    }
+  ],
+  "insertion_sort_comparisons": [
+    {
+      "input_size": 1000,
+      "distribution": "already_descending",
+      "insertion_sort_key_comparisons": 999
+    },
+    {
+      "input_size": 1000,
+      "distribution": "nearly_descending",
+      "insertion_sort_key_comparisons": 1098
+    },
+    {
+      "input_size": 1000,
+      "distribution": "random",
+      "insertion_sort_key_comparisons": 250789
+    },
+    {
+      "input_size": 5000,
+      "distribution": "already_descending",
+      "insertion_sort_key_comparisons": 4999
+    },
+    {
+      "input_size": 5000,
+      "distribution": "nearly_descending",
+      "insertion_sort_key_comparisons": 5098
+    },
+    {
+      "input_size": 5000,
+      "distribution": "random",
+      "insertion_sort_key_comparisons": 6289295
+    },
+    {
+      "input_size": 10000,
+      "distribution": "already_descending",
+      "insertion_sort_key_comparisons": 9999
+    },
+    {
+      "input_size": 10000,
+      "distribution": "nearly_descending",
+      "insertion_sort_key_comparisons": 10098
+    },
+    {
+      "input_size": 10000,
+      "distribution": "random",
+      "insertion_sort_key_comparisons": 25017572
+    }
+  ],
+  "timsort_timings": [
+    {
+      "input_size": 1000,
+      "distribution": "already_descending",
+      "timsort_seconds": 5.2e-05
+    },
+    {
+      "input_size": 1000,
+      "distribution": "nearly_descending",
+      "timsort_seconds": 6.2e-05
+    },
+    {
+      "input_size": 1000,
+      "distribution": "random",
+      "timsort_seconds": 0.000159
+    },
+    {
+      "input_size": 5000,
+      "distribution": "already_descending",
+      "timsort_seconds": 0.000232
+    },
+    {
+      "input_size": 5000,
+      "distribution": "nearly_descending",
+      "timsort_seconds": 0.000232
+    },
+    {
+      "input_size": 5000,
+      "distribution": "random",
+      "timsort_seconds": 0.000763
+    },
+    {
+      "input_size": 10000,
+      "distribution": "already_descending",
+      "timsort_seconds": 0.000537
+    },
+    {
+      "input_size": 10000,
+      "distribution": "nearly_descending",
+      "timsort_seconds": 0.000431
+    },
+    {
+      "input_size": 10000,
+      "distribution": "random",
+      "timsort_seconds": 0.00144
+    }
+  ]
+}

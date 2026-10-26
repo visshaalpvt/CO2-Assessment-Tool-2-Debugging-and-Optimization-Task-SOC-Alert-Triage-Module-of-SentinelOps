@@ -1,0 +1,11 @@
+ALGORITHM: REUSABLE BLOCKLIST SET INDEX
+BUILD INPUT: blocklist sequence of b IP addresses
+BUILD OUTPUT: set containing the blocklisted addresses
+1. Create a set from the blocklist once.
+2. For each query IP, test whether the IP is a member of the set.
+3. Return true when present; otherwise return false.
+
+BUILD TIME: expected O(b); SPACE: O(b).
+LOOKUP: expected O(1) per query; worst case can degrade under pathological hash collisions.
+CORRECTED BASELINE: sequentially compare each item and return true only when found;
+return false after the loop finishes. O(b) worst-case time and O(1) extra space.
